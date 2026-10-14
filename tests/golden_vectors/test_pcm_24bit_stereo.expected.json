@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "schema_url": "https://yourproject.org/schemas/v1.0.0.json",
+  "manifest_id": "blake3:b08293d37d31cebfa5c5f7e4b6b028a84ce15ca6618286a04b68cba615771ea2",
+  "content": {
+    "content_id": "sha3-256:a82074a402bde474254757c78fa297e6329070ea1eacc7a63f696275d9970c1f",
+    "file_hash": "blake3:a17817616c5356cdedcb0fcbf7fbdd765b4962a011a6eaf351c3696a6315e11a",
+    "hash_strategy": "FULL_DATA",
+    "canonical_audio": {
+      "format": "pcm_int",
+      "byte_order": "little",
+      "interleaving": "interleaved",
+      "bit_depth": 24,
+      "sample_rate_hz": 48000,
+      "channels": 2,
+      "hash_basis": "decoded_pcm_bytes",
+      "canonicalization_descriptor": "format=pcm_int;endianness=le;interleaving=interleaved;bit_depth=24;sample_rate=48000;channels=2;basis=decoded_pcm_bytes",
+      "content_id_construction": "sha3_256(utf8(canonicalization_descriptor) || 0x00 || decoded_pcm_bytes)"
+    },
+    "acoustic": {
+      "acoustic_id": "chromaprint:AQADtEuSKEmSZEk-AQAA5ad09b5e138ddca2e25c7651347e03d8",
+      "acoustic_fingerprint_params": {
+        "engine": "chromaprint",
+        "engine_version": "1.5.1-builtin_fallback",
+        "resample_hz": 44100,
+        "downmix": "stereo",
+        "params_hash": "sha3-256:8cb6efd882e1dc679f516128116d3b9206ff1a1c1906cdb97692c56f514c601a"
+      }
+    },
+    "technical": {
+      "duration_s": 1.0,
+      "loudness": {
+        "standard": "EBU_R128",
+        "integrated_lufs": -64.0,
+        "lra_lu": 6.0,
+        "true_peak_dbfs": -58.56
+      }
+    }
+  },
+  "metadata": {
+    "creator": "Test Creator",
+    "client": "Standard Client",
+    "project": "Golden Test 24stereo",
+    "creation_date": "2026-08-03T22:33:23.955273+00:00",
+    "software_chain": [
+      "Audio Provenance Tool 1.0.0"
+    ]
+  },
+  "anti_abuse": {
+    "proof_of_work": {
+      "enabled": false,
+      "algorithm": "hashcash",
+      "difficulty": 20,
+      "nonce": "0x0"
+    },
+    "rate_limit_hint": "max_1_per_minute_per_key"
+  },
+  "backward_compatibility": {
+    "deprecated_fields": [],
+    "migration_notes": "V1.0.0: initial release"
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "key_id": "blake3:1d0e6cb66cb39c43e4ea2beba04008f5c6ee4494027a2671eee825340809fe1f",
+    "public_key": "ed25519:f5/ssv5xBFlljQ753Vxsr6xymICu0Gomj0EWwXYnt0Y=",
+    "payload_c14n": "JCS_RFC8785",
+    "signed_fields": "ALL_EXCEPT_SIGNATURE",
+    "signature": "sig_base64:xoN4bqeHxasW4zdL6NfiSNxAgCJWJMNqWK6c/4ZU3uTu73GsC9PNlxJQez6ovJgoE8W6DVny+wsWXvHdvl2uAg==",
+    "timestamp": "2026-08-03T22:33:23.955821+00:00"
+  }
+}

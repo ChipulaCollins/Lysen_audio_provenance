@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+htmlcov/
+*.cover
+
+# User specific & Local state
+.lysen/
+.audio_provenance/
+*.log
+
+# IntelliJ / IDEs
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+
+# Flutter / Dart
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/coverage/
+
+# Android / iOS build artifacts
+android/app/debug
+android/app/profile
+android/app/release
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Sensitive Keys (never commit user private keys)
+ed25519_priv.pem
+*.private.pem
+!tests/golden_vectors/test_privkey.pem
+
+# Storage & Temporary Files
+server_storage/
+storage/
+uploads/
+*.watermarked.wav
+*.c2pa.wav
+!tests/golden_vectors/*.wav
+

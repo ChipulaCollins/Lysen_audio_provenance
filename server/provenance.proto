@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package audio_provenance;
+
+service ProvenanceService {
+  rpc CreateManifest (CreateManifestRequest) returns (CreateManifestResponse);
+  rpc VerifyManifest (VerifyManifestRequest) returns (VerifyManifestResponse);
+  rpc GetLedgerProof (LedgerProofRequest) returns (LedgerProofResponse);
+}
+
+message CreateManifestRequest {
+  string audio_filename = 1;
+  bytes pcm_bytes = 2;
+  int32 sample_rate = 3;
+  int32 bit_depth = 4;
+  int32 channels = 5;
+  string creator = 6;
+  string project = 7;
+}
+
+message CreateManifestResponse {
+  string manifest_id = 1;
+  string manifest_json = 2;
+  string content_id = 3;
+}
+
+message VerifyManifestRequest {
+  string manifest_json = 1;
+  bytes pcm_bytes = 2;
+}
+
+message VerifyManifestResponse {
+  bool is_valid = 1;
+  bool signature_valid = 2;
+  bool content_id_match = 3;
+  string error_message = 4;
+}
+
+message LedgerProofRequest {
+  int32 log_index = 1;
+}
+
+message LedgerProofResponse {
+  int32 log_index = 1;
+  string root_hash = 2;
+  repeated string inclusion_proof = 3;
+}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use Lysen in your research, production systems, or publications, please cite it as below."
+authors:
+  - name: "Lysen Audio Provenance Team"
+    website: "https://github.com/lysen-audio/audio_provenance"
+title: "Lysen: Enterprise C2PA Audio Provenance & Cryptographic Authenticity Engine"
+version: 1.0.0
+date-released: 2026-10-14
+url: "https://github.com/lysen-audio/audio_provenance"
+repository-code: "https://github.com/lysen-audio/audio_provenance"
+keywords:
+  - "audio provenance"
+  - "c2pa"
+  - "cryptography"
+  - "ed25519"
+  - "merkle tree"
+  - "audio watermarking"
+  - "authenticity"
+license: Apache-2.0
